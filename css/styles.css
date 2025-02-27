@@ -102,6 +102,19 @@ html {
     margin: 0;
     padding: 0;
     margin-top: -40px;
+    position: relative;
+    width: 100%;
+    min-height: 600px; /* minimal tinggi 600px */
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* lebar penuh */
+        height: 100%; /* ikuti tinggi hero */
+        min-height: 600px; /* tinggi minimal 600px */
+        object-fit: cover; /* penting biar gambar gak gepeng */
+        z-index: -1; /* gambar di belakang teks */
+    }
 }
 
 .home{
@@ -440,6 +453,7 @@ html {
     outline: none;
     border-radius: 10px;
     background-color: rgba(63, 63, 59, 0.5);
+    z-index: 10000;
 }
 
 .buttonx:hover{
@@ -569,8 +583,18 @@ html {
 .side_utama{
     width: 500px;
     height: 800px;
-    background: url('https://piowarior.github.io/nama-repo/assets/img/tes4.jpg')no-repeat center/cover;
+    /* background: url(/assets/img/tes4.jpg)no-repeat center/cover; */
     border-radius: 0 10px 10px 0;
+    position: relative; 
+    overflow: hidden;
+    z-index: 0;
+    img{
+        width: 500px;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
 }
 
 
