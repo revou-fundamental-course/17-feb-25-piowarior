@@ -569,7 +569,7 @@ html {
 .side_utama{
     width: 500px;
     height: 800px;
-    background: url(assets/img/tes4.jpg)no-repeat center/cover;
+    background: url('https://piowarior.github.io/nama-repo/assets/img/tes4.jpg')no-repeat center/cover;
     border-radius: 0 10px 10px 0;
 }
 
